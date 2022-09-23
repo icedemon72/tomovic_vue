@@ -29,7 +29,7 @@
                 <div class="color-box-container d-flex justify-content-center">
                   <p>Dostupne boje:</p>
                   <div :key="i" v-for="i in item.colors">
-                    <div :class="i + ' color-box'"></div>
+                    <div @click="changeColor(i, item)" :class="i + ' color-box'"></div>
                   </div>
                 </div>
             </div>
@@ -49,6 +49,12 @@ export default {
   name: "Content",
   components: {},
   props: {},
+  methods: {
+    changeColor(color, i){
+      i.img = require(`./images/slika${i.id}_${color}.jpg`);
+      console.log(color, i.img);
+    }
+  },
   data() {
     return {
       articles: [ 
@@ -58,17 +64,17 @@ export default {
           price: "254.99",
           description: "Lapel Majica Kratkih Rukava",
           sizes: ["XS", "M", "L", "XXL"],
-          colors: ['white', 'red', 'brown'],
-          img: require("./images/slika1.jpg")
+          colors: ['white', 'red', 'black'],
+          img: require("./images/slika1_white.jpg")
         },
         {
           id: 2,
           name: '"EAST MEETS WEST" Majica',
           price: "374.99",
           description: "EMW Majica Kratkih Rukava",
-          colors: ['black', 'red', 'blue'],
+          colors: ['black'],
           sizes: ['XXS', 'XXL', 'XXL'],
-          img: require("./images/slika2.jpg")
+          img: require("./images/slika2_black.jpg")
         },
 
         {
@@ -76,7 +82,7 @@ export default {
           name: "Mobil Racing Majica",
           price: "499.99",
           description: "MR Majica Kratkih Rukava",
-          colors: ['brown', 'blue', 'gray'],
+          colors: ['brown'],
           sizes: [ 'M', 'L', 'XL', 'XXL'],
           img: require("./images/slika3.jpg")
         },
@@ -94,45 +100,45 @@ export default {
           name: "Carp Fishing Majica",
           price: "744.99",
           description: "CF Majica Kratkih Rukava",
-          colors: ['black', 'red', 'blue', 'gray'],
+          colors: ['black', 'green'],
           sizes: ['XS', 'XL', 'XXL', 'XXL'],
-          img: require("./images/slika5.jpg")
+          img: require("./images/slika5_black.jpg")
         },
         {
           id: 6,
           name: "Joker Majica",
           price: "1099.99",
           description: "Joker Majica Kratkih Rukava",
-          colors: ['black', 'gray', 'brown'],
+          colors: ['black', 'white'],
           sizes: ['XXL', 'XXL'],
-          img: require("./images/slika6.jpg")
+          img: require("./images/slika6_black.jpg")
         },
         {
           id: 7,
           name: "Multicam Suskavac",
           price: "4349.99",
           description: "Suskavac Dugih Rukava",
-          colors: ['black', 'red', 'blue'],
+          colors: ['black', 'green'],
           sizes: ['XXS'],
-          img: require("./images/slika7.jpg")
+          img: require("./images/slika7_black.jpg")
         },
         {
           id: 8,
           name: "Multicam Military",
           price: "4999.99",
           description: "Camo Dukserica Dugih Rukava",
-          colors: ['brown', 'red'],
+          colors: ['brown', 'black'],
           sizes: ['M', 'L', 'XXL', 'XXL'],
-          img: require("./images/slika8.jpg")
+          img: require("./images/slika8_brown.jpg")
         },
         {
           id: 9,
           name: "Multicam Duks",
           price: "1499.99",
           description: "Duks dugih rukava",
-          colors: ['gray', 'white'],
+          colors: ['gray', 'blue', 'white'],
           sizes: ['XXS', 'L', 'XL'],
-          img: require("./images/slika9.jpg")
+          img: require("./images/slika9_gray.jpg")
         },
       ],
     };
