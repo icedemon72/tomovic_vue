@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <h1 class="brand-text">PRODAVNICA ODECE</h1>
-    <Content class="content"/>
+    <Content class="content" />
     <Footer class="footer" />
   </div>
 </template>
@@ -24,6 +24,8 @@ export default {
 
 <style>
   body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 44%, rgba(173,173,173,1) 100%);
     position: relative;
     min-height: 100vh;
   }

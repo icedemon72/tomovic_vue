@@ -1,6 +1,6 @@
 <template>
   <div class="container my-5 about-us">
-    <div class="row">
+    <div class="row cont">
       <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
         <small class="text-uppercase span">About us</small>
         <h1 class="h2 mb-4 title">Lorem Ipsum <span class="span">DOLOR!</span></h1>

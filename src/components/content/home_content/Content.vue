@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid content">
     <p>Prikazano <b>{{ articles.length }}</b>/<b>{{ articles.length }}</b> artikala!</p>
-    <div class="row">
+    <div class="row container-s">
       <div
         class="col-lg-4 col-sm-6 d-flex justify-content-center"
         v-for="(item, id) in articles"
@@ -86,7 +86,7 @@ export default {
           price: "250.99",
           description: "HBL Majica Kratkih Rukava",
           colors: ['gray'],
-          sizes: ['XXS', 'XS', 'S', 'M', 'XXL'],
+          sizes: ['XXS', 'XS', 'M', 'XXL'],
           img: require("./images/slika4.jpg")
         },
         {
@@ -140,9 +140,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  .container-s {
+    margin-bottom: 50px;
+  }
+  .card {
+    background-color: #ffffff !important;
+  }
   .color-box-container {
-    overflow: hidden
+    overflow: hidden;
   }
 
   .color-box-container p {
@@ -154,6 +160,7 @@ export default {
     border: 2px solid black;
     float: left;
     cursor: pointer;
+    font-weight: 800;
   }
 
   .sizes-box:hover {
