@@ -1,0 +1,20 @@
+<template>
+  <div>
+    
+  </div>
+</template>
+
+<script>
+imports
+
+export default {
+  name: 'IME OVDE',
+  components: {
+    Komponente koje ukljucuje
+  }
+}
+</script>
+
+<style>
+
+</style>
