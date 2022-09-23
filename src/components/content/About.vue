@@ -2,6 +2,7 @@
   <div>
     <Navbar />
     <About_content />
+    <br />
     <Footer class="footer" />
   </div>
 </template>
