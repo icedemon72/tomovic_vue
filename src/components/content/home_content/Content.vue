@@ -52,7 +52,6 @@ export default {
   methods: {
     changeColor(color, i){
       i.img = require(`./images/slika${i.id}_${color}.jpg`);
-      console.log(color, i.img);
     }
   },
   data() {
