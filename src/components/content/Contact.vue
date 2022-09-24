@@ -26,6 +26,7 @@
 
       </form>
     </div>
+    <br /><br />
     <Footer class="footer" />
   </div>
 </template>
