@@ -62,7 +62,7 @@ export default {
           name: "Lapel Majica",
           price: "254.99",
           description: "Lapel Majica Kratkih Rukava",
-          sizes: ["XS", "M", "L", "XXL"],
+          sizes: ["L", "XXL"],
           colors: ['white', 'red', 'black'],
           img: require("./images/slika1_white.jpg")
         },
@@ -91,7 +91,7 @@ export default {
           price: "250.99",
           description: "HBL Majica Kratkih Rukava",
           colors: ['gray'],
-          sizes: ['XXS', 'XS', 'M', 'XXL'],
+          sizes: ['XXS', 'M', 'XXL'],
           img: require("./images/slika4.jpg")
         },
         {
@@ -100,7 +100,7 @@ export default {
           price: "744.99",
           description: "CF Majica Kratkih Rukava",
           colors: ['black', 'green'],
-          sizes: ['XS', 'XL', 'XXL', 'XXL'],
+          sizes: ['XS', 'XL', 'XXL'],
           img: require("./images/slika5_black.jpg")
         },
         {
@@ -127,7 +127,7 @@ export default {
           price: "4999.99",
           description: "Camo Dukserica Dugih Rukava",
           colors: ['brown', 'black'],
-          sizes: ['M', 'L', 'XXL', 'XXL'],
+          sizes: ['M', 'L', 'XXL'],
           img: require("./images/slika8_brown.jpg")
         },
         {
